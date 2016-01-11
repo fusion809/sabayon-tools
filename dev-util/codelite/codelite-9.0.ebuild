@@ -11,7 +11,7 @@ inherit cmake-utils wxwidgets
 DESCRIPTION="A Free, open source, cross platform C, C++, PHP and Node.js IDE"
 HOMEPAGE="http://www.codelite.org"
 SRC_URI="https://github.com/eranif/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
-
+RESTRICT="primaryuri"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"

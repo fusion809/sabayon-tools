@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name><![CDATA[sabayon-tools]]></name>
+    <description lang="en"><![CDATA[Brenton's Sabayon Overlay]]></description>
+    <homepage>https://github.com/fusion809/sabayon-tools</homepage>
+    <owner type="person">
+      <email>brentonhorne77@gmail.com</email>
+      <name><![CDATA[Brenton Horne]]></name>
+    </owner>
+    <source type="git">git://github.com/fusion809/sabayon-tools.git</source>
+    <feed>https://github.com/fusion809/sabayon-tools/commits/master.atom</feed>
+  </repo>
+</repositories>

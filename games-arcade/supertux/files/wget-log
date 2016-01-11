@@ -1,0 +1,21 @@
+--2016-01-01 05:53:02--  http://supertux-0.4.0-obstack.patch/
+Resolving supertux-0.4.0-obstack.patch... failed: Name or service not known.
+wget: unable to resolve host address ‘supertux-0.4.0-obstack.patch’
+--2016-01-01 05:53:02--  http://supertux-0.4.0-tinygettext.patch/
+Resolving supertux-0.4.0-tinygettext.patch... failed: Name or service not known.
+wget: unable to resolve host address ‘supertux-0.4.0-tinygettext.patch’
+--2016-01-01 05:53:03--  http://supertux-0.4.0-squirrel.patch/
+Resolving supertux-0.4.0-squirrel.patch... failed: Name or service not known.
+wget: unable to resolve host address ‘supertux-0.4.0-squirrel.patch’
+--2016-01-01 05:53:03--  http://supertux-0.4.0-desktop.patch/
+Resolving supertux-0.4.0-desktop.patch... failed: Name or service not known.
+wget: unable to resolve host address ‘supertux-0.4.0-desktop.patch’
+--2016-01-01 05:53:04--  http://supertux-0.4.0-flags.patch/
+Resolving supertux-0.4.0-flags.patch... failed: Name or service not known.
+wget: unable to resolve host address ‘supertux-0.4.0-flags.patch’
+--2016-01-01 05:53:04--  http://supertux-0.4.0-license.patch/
+Resolving supertux-0.4.0-license.patch... failed: Name or service not known.
+wget: unable to resolve host address ‘supertux-0.4.0-license.patch’
+--2016-01-01 07:38:02--  http://supertux-0.4.0-icon.patch/
+Resolving supertux-0.4.0-icon.patch... failed: Name or service not known.
+wget: unable to resolve host address ‘supertux-0.4.0-icon.patch’

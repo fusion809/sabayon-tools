@@ -1,0 +1,8 @@
+>>> Existing ${T}/environment for 'opensuse-community-wallpapers-1.0' will
+>>> be sourced. Run 'clean' to start with a fresh environment.
+
+!!! Digest verification failed:
+!!! /home/fusion809/GitHub/sabayon-tools/x11-themes/opensuse-community-wallpapers/output_err.txt
+!!! Reason: Filesize does not match recorded size
+!!! Got: 138
+!!! Expected: 0

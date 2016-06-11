@@ -5,7 +5,7 @@ EAPI="5"
 
 inherit eutils
 
-MY_BUILD="16460"
+MY_BUILD="17209"
 
 DESCRIPTION="Freeware advanced editor for dynamic and Web languages"
 HOMEPAGE="http://www.activestate.com/products/komodo_edit"

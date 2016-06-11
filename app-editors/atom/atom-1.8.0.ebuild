@@ -194,7 +194,7 @@ src_prepare() {
 	local patch binmod _s nan_s="${WORKDIR}/nan-${NAN_V}"
 
 	cd "${S}/usr/share/atom/resources/app" || die
-	epatch "${FILESDIR}/${PN}-unbundle-electron.patch"
+	patch -Np1 -i "${FILESDIR}/${PN}-unbundle-electron.patch"
 
 	sed -i -e "s|{{ATOM_PATH}}|/usr/$(get_libdir)/electron/electron|g" \
 		./atom.sh \

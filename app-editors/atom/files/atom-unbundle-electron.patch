@@ -1,0 +1,34 @@
+--- a/atom.sh	2016-06-11 16:48:20.582344568 +1000
++++ b/atom.sh	2016-06-07 07:41:59.000000000 +1000
+@@ -87,12 +87,13 @@
+   SCRIPT=$(readlink -f "$0")
+   USR_DIRECTORY=$(readlink -f $(dirname $SCRIPT)/..)
+
+-  export NPM_CONFIG_NODEDIR="/usr/include/electron/node/"
+-  export ATOM_RESOURCE_PATH="{{ATOM_RESOURCE_PATH}}"
+-  ATOM_PATH="{{ATOM_PATH}}"
++  if [ -n "$BETA_VERSION" ]; then
++    ATOM_PATH="$USR_DIRECTORY/share/atom-beta/atom"
++  else
++    ATOM_PATH="$USR_DIRECTORY/share/atom/atom"
++  fi
+
+   ATOM_HOME="${ATOM_HOME:-$HOME/.atom}"
+-  export PYTHON=python2
+   mkdir -p "$ATOM_HOME"
+
+   : ${TMPDIR:=/tmp}
+@@ -100,11 +101,11 @@
+   [ -x "$ATOM_PATH" ] || ATOM_PATH="$TMPDIR/atom-build/Atom/atom"
+
+   if [ $EXPECT_OUTPUT ]; then
+-    "$ATOM_PATH" --app="$ATOM_RESOURCE_PATH" --executed-from="$(pwd)" --pid=$$ "$@"
++    "$ATOM_PATH" --executed-from="$(pwd)" --pid=$$ "$@"
+     exit $?
+   else
+     (
+-    nohup "$ATOM_PATH" --app="$ATOM_RESOURCE_PATH" --executed-from="$(pwd)" --pid=$$ "$@" > "$ATOM_HOME/nohup.out" 2>&1
++    nohup "$ATOM_PATH" --executed-from="$(pwd)" --pid=$$ "$@" > "$ATOM_HOME/nohup.out" 2>&1
+     if [ $? -ne 0 ]; then
+       cat "$ATOM_HOME/nohup.out"
+       exit $?

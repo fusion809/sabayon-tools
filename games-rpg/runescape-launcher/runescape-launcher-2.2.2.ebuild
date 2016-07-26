@@ -27,7 +27,7 @@ S="${WORKDIR}"
 RDEPEND="
 	media-libs/libpng:1.2
 	>=media-libs/libsdl2-2.0.2
-	>=media-libs/glew-1.10.0:0/1.10
+	=media-libs/glew-1.10.0-r100
 	>=media-libs/libvorbis-1.3.2
 	>=net-libs/webkit-gtk-2.4.8:2
 	>=net-misc/curl-7.35.0

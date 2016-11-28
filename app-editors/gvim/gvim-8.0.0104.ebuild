@@ -3,7 +3,7 @@
 # $Id$
 
 EAPI=5
-VIM_VERSION="7.4"
+VIM_VERSION="8.0"
 PYTHON_COMPAT=( python{2_7,3_3,3_4,3_5} )
 PYTHON_REQ_USE=threads
 inherit eutils vim-doc flag-o-matic fdo-mime versionator bash-completion-r1 prefix python-r1
@@ -13,8 +13,7 @@ if [[ ${PV} == 9999* ]] ; then
 	EGIT_REPO_URI="https://github.com/vim/vim.git"
 	EGIT_CHECKOUT_DIR=${WORKDIR}/vim-${PV}
 else
-	SRC_URI="https://github.com/vim/vim/archive/v${PV}.tar.gz -> vim-${PV}.tar.gz
-		https://dev.gentoo.org/~radhermit/vim/vim-7.4.827-gentoo-patches.tar.bz2"
+	SRC_URI="https://github.com/vim/vim/archive/v${PV}.tar.gz -> vim-${PV}.tar.gz"
 	KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x86-solaris"
 fi
 
@@ -107,17 +106,16 @@ src_prepare() {
 	# Use exuberant ctags which installs as /usr/bin/exuberant-ctags.
 	# Hopefully this pattern won't break for a while at least.
 	# This fixes bug 29398 (27 Sep 2003 agriffis)
-	sed -i 's/\<ctags\("\| [-*.]\)/exuberant-&/g' \
-		"${S}"/runtime/doc/syntax.txt \
-		"${S}"/runtime/doc/tagsrch.txt \
-		"${S}"/runtime/doc/usr_29.txt \
-		"${S}"/runtime/menu.vim \
-		"${S}"/src/configure.in || die 'sed failed'
+	#sed -i 's/\<ctags\("\| [-*.]\)/exuberant-&/g' \
+	#	"${S}"/runtime/doc/syntax.txt \
+	#	"${S}"/runtime/doc/tagsrch.txt \
+	#	"${S}"/runtime/doc/usr_29.txt \
+	#	"${S}"/runtime/menu.vim \
+	#	"${S}"/src/configure || die 'sed failed'
 
 	# Don't be fooled by /usr/include/libc.h.  When found, vim thinks
 	# this is NeXT, but it's actually just a file in dev-libs/9libs
 	# This fixes bug 43885 (20 Mar 2004 agriffis)
-	sed -i 's/ libc\.h / /' "${S}"/src/configure.in || die 'sed failed'
 
 	# gcc on sparc32 has this, uhm, interesting problem with detecting EOF
 	# correctly. To avoid some really entertaining error messages about stuff

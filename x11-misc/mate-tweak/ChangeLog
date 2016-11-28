@@ -1,0 +1,144 @@
+# ChangeLog for x11-misc/mate-tweak
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+  28 Aug 2016; wjn <wjn@aol.jp> -mate-tweak-16.10.1.ebuild:
+  Delete old version 16.10.1
+
+*mate-tweak-16.10.5 (28 Aug 2016)
+
+  28 Aug 2016; wjn <wjn@aol.jp> +mate-tweak-16.10.5.ebuild:
+  Add version 16.10.5
+
+   FYI:
+    This version newly depends on dev-python/setproctitle
+
+*mate-tweak-16.10.1 (17 Jun 2016)
+
+  17 Jun 2016; wjn <wjn@aol.jp> -mate-tweak-3.5.9.ebuild,
+  +mate-tweak-16.10.1.ebuild:
+  Add version 16.10.1, delete old 3.5.9
+
+   - mate-tweak changes to support GTK+ 3, gtk+:3 is needed instead of gtk+:2
+   - MATE 1.14 or later is required
+
+   After mate-tweak 16.10.0, its versioning seems to change the base to
+  the release version of Ubuntu MATE (16.10 is "Yakkety Yak", Oct 2016)
+
+   Changelog is at
+  https://launchpad.net/ubuntu/yakkety/+source/mate-tweak/+changelog
+
+*mate-tweak-3.5.10 (18 Apr 2016)
+
+  18 Apr 2016; wjn <wjn@aol.jp> +mate-tweak-3.5.10.ebuild:
+  Add version 3.5.10
+
+*mate-tweak-3.5.9 (13 Apr 2016)
+
+  13 Apr 2016; wjn <wjn@aol.jp> -mate-tweak-3.5.8.ebuild,
+  +mate-tweak-3.5.9.ebuild:
+  Add version 3.5.9, delete old 3.5.8
+
+*mate-tweak-3.5.8 (02 Apr 2016)
+
+  02 Apr 2016; wjn <wjn@aol.jp> -mate-tweak-3.5.7.ebuild,
+  +mate-tweak-3.5.8.ebuild:
+  Add version 3.5.8, delete old 3.5.7
+
+*mate-tweak-3.5.7 (17 Mar 2016)
+
+  17 Mar 2016; wjn <wjn@aol.jp> -mate-tweak-3.5.6.ebuild,
+  +mate-tweak-3.5.7.ebuild:
+  Add version 3.5.7, delete old 3.5.6
+
+   In this version, upstream fixes a bug
+    - https://bugs.launchpad.net/ubuntu-mate/+bug/1548011
+
+*mate-tweak-3.5.6 (29 Feb 2016)
+
+  29 Feb 2016; wjn <wjn@aol.jp> -mate-tweak-3.5.5.ebuild,
+  +mate-tweak-3.5.6.ebuild:
+  Add version 3.5.6, delete old 3.5.5
+
+  19 Feb 2016; wjn <wjn@aol.jp> metadata.xml:
+  **/metadata.xml: Update and tidy up
+
+*mate-tweak-3.5.5 (03 Feb 2016)
+
+  03 Feb 2016; wjn <wjn@aol.jp> -mate-tweak-3.5.2a.ebuild,
+  -mate-tweak-3.5.3.ebuild, +mate-tweak-3.5.5.ebuild:
+  Add version 3.5.5, delete olds
+
+*mate-tweak-3.5.3 (13 Jan 2016)
+
+  13 Jan 2016; wjn <wjn@aol.jp> +mate-tweak-3.5.3.ebuild:
+  Add version 3.5.3
+
+   Upstream: https://launchpad.net/ubuntu/+source/mate-tweak/3.5.3-1
+
+  01 Jan 2016; wjn <wjn@aol.jp> mate-tweak-3.5.2a.ebuild:
+  **/*.ebuild: Change 2015 to 2016 in the GPLv2 copyright expressions
+
+  25 Nov 2015; wjn <wjn@aol.jp> mate-tweak-3.5.2a.ebuild:
+  x11-misc/{lightdm-gtk-greeter-settings,mate-tweak}: Add RESTRICT="mirror"
+
+  11 Oct 2015; wjn <wjn@aol.jp> mate-tweak-3.5.2a.ebuild:
+  Temporarily disable to build for python 3.5.
+
+   It can't built for python 3.5 because of missing dependencies.
+
+  08 Oct 2015; wjn <wjn@aol.jp> -mate-tweak-3.5.2.ebuild:
+  Delete old version 3.5.2.
+
+*mate-tweak-3.5.2a (08 Oct 2015)
+
+  08 Oct 2015; wjn <wjn@aol.jp> +mate-tweak-3.5.2a.ebuild:
+  Add version 3.5.2a.
+
+  09 Sep 2015; wjn <wjn@aol.jp> +metadata.xml:
+  Add minimal metadata.xml(s) for QA.
+
+  09 Sep 2015; wjn <wjn@aol.jp> mate-tweak-3.5.2.ebuild:
+  Update ebuild file format from "# $Header: $" to "# $Id"
+
+   Since Gentoo changes the VCS from CVS to git, ebuild header is changed.
+
+*mate-tweak-3.5.2 (29 Aug 2015)
+
+  29 Aug 2015; wjn <wjn@aol.jp> -mate-tweak-3.4.8.ebuild,
+  -mate-tweak-3.4.9.ebuild, -mate-tweak-3.5.0.ebuild,
+  +mate-tweak-3.5.2.ebuild:
+  Add version 3.5.2, delete older vers.
+
+*mate-tweak-3.5.0 (27 Jul 2015)
+
+  27 Jul 2015; wjn <wjn@aol.jp> +mate-tweak-3.5.0.ebuild:
+  Add version 3.5.0.
+
+  31 May 2015; wjn <wjn@aol.jp> mate-tweak-3.4.9.ebuild:
+  Fix typo of missing whitespace.
+
+  30 May 2015; wjn <wjn@aol.jp> mate-tweak-3.4.8.ebuild,
+  mate-tweak-3.4.9.ebuild:
+  Add "nls" to ${IUSE}.
+
+  30 May 2015; wjn <wjn@aol.jp> mate-tweak-3.4.8.ebuild,
+  mate-tweak-3.4.9.ebuild:
+  Fix dependencies.
+
+*mate-tweak-3.4.9 (30 May 2015)
+
+  30 May 2015; wjn <wjn@aol.jp> +mate-tweak-3.4.9.ebuild:
+  Add version 3.4.9.
+
+  14 May 2015; wjn <wjn@aol.jp> mate-tweak-3.4.8.ebuild:
+  Remove needless inherit flag-o-matic.
+
+*mate-tweak-3.4.8 (13 May 2015)
+
+  13 May 2015; wjn <wjn@aol.jp> +mate-tweak-3.4.8.ebuild:
+  Add newly. version 3.4.8.
+
+   MATE Tweak Tool from Ubuntu MATE.
+  See https://launchpad.net/ubuntu/+source/mate-tweak
+

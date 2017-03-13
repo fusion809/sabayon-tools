@@ -24,7 +24,8 @@ RDEPEND="dev-python/dbus-python
          dev-python/setuptools
          media-libs/alsa-oss
          media-sound/pulseaudio
-         media-sound/spotify"
+         x11-misc/wmctrl
+		 media-sound/spotify"
 DEPEND="${RDEPEND}"
 
 python_compile_all () {

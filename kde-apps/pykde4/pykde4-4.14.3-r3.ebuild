@@ -34,8 +34,8 @@ DEPEND="${RDEPEND}
 
 PATCHES=(
 	"${FILESDIR}/${P}-gcc-5.patch"
-	"${DISTDIR}/${P}-sip419.patch.bz2"
-	"${FILESDIR}/pykde4-kio.patch"
+#	"${DISTDIR}/${P}-sip419.patch.bz2"
+	"${FILESDIR}/${P}-kio.patch"
 )
 
 pkg_setup() {

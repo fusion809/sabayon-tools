@@ -29,9 +29,15 @@ RDEPEND="dev-python/dbus-python
 DEPEND="${RDEPEND}"
 
 python_compile_all () {
-  distutils-r1_python_compile_all
+	distutils-r1_python_compile_all
 }
 
 python_install_all() {
 	distutils-r1_python_install_all
+	insinto /usr/share/pixmaps/
+	newins blockify/data/icon-red-512.png blockify.png
+
+	sed -i -e 's/icon\-red\-512\.png/blockify\.png/g' blockify/data/blockify.desktop
+	insinto /usr/share/applications/
+	newins blockify/data/blockify.desktop blockify.desktop
 }

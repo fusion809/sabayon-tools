@@ -34,7 +34,7 @@ DEPEND="${RDEPEND}
 
 PATCHES=(
 	"${FILESDIR}/${P}-gcc-5.patch"
-#	"${DISTDIR}/${P}-sip419.patch.bz2"
+	"${DISTDIR}/${P}-sip419.patch.bz2"
 	"${FILESDIR}/${P}-kio.patch"
 )
 

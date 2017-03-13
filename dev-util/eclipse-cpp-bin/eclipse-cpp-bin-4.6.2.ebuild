@@ -26,6 +26,7 @@ IUSE=""
 
 RDEPEND="
 	>=virtual/jdk-1.8
+	virtual/jre
 	x11-libs/gtk+:2
 	dev-java/java-config
 "

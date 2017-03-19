@@ -1,5 +1,5 @@
 # sabayon-tools
-This is my Sabayon overlay, it was originally intended for Atom with ebuilds to install Atom from binary packages. It has since been expanded to include extra packages. To add this overlay run (as root):
+This is my Portage overlay, it was originally intended for Atom with ebuilds to install Atom from binary packages on Sabayon Linux. It has since been expanded to include extra packages and be intended for Funtoo Linux. To add this overlay run (as root):
 ```sh
 layman -a sabayon-tools
 ```

@@ -3,4 +3,3 @@ This is my Portage overlay, it was originally intended for Atom with ebuilds to 
 ```sh
 layman -a sabayon-tools
 ```
-`STATUS.md` files refer to my history (of past build/installation failures) with the ebuild in question.

@@ -38,6 +38,5 @@ src_install() {
 	doexe "crash_reporter"
 	dosym "/opt/${PN}/sublime_text" /usr/bin/subl
 	make_desktop_entry "subl" "Sublime Text" "sublime-text" "Development;TextEditor"
-	insinto /usr/share/pixmaps
-	doicon /opt/${PN}/Icon/256x256/sublime-text.png
+	doicon -s 256 Icon/256x256/sublime-text.png
 }

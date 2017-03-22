@@ -3,7 +3,7 @@
 <repositories xmlns="" version="1.0">
   <repo quality="experimental" status="unofficial">
     <name><![CDATA[sabayon-tools]]></name>
-    <description lang="en"><![CDATA[Brenton's Sabayon Overlay]]></description>
+    <description lang="en"><![CDATA[Brenton Horne's overlay for Funtoo Linux]]></description>
     <homepage>https://github.com/fusion809/sabayon-tools</homepage>
     <owner type="person">
       <email>brentonhorne77@gmail.com</email>
